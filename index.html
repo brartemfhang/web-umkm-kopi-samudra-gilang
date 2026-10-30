@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kopi Samudra — Nikmati Setiap Tegukan</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: "#123B66",
+            ocean: "#1D5D92",
+            skyblue: "#EAF4FB"
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-white text-slate-800">
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="w-full border-b border-blue-100 bg-white">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-8">
+
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-3">
+        <div class="flex h-11 w-11 items-center justify-center rounded-full bg-navy text-xl text-white">
+          ☕
+        </div>
+
+        <div>
+          <span class="block text-xl font-bold tracking-wide text-navy">
+            KOPI SAMUDRA
+          </span>
+          <span class="text-xs tracking-[0.25em] text-slate-500">
+            COFFEE ROASTERY
+          </span>
+        </div>
+      </a>
+
+      <!-- Menu -->
+      <div class="hidden items-center gap-8 md:flex">
+        <a href="#home"
+           class="font-medium text-navy transition hover:text-ocean">
+          Home
+        </a>
+
+        <a href="#tentang"
+           class="font-medium text-slate-600 transition hover:text-ocean">
+          Tentang
+        </a>
+
+        <a href="#produk"
+           class="font-medium text-slate-600 transition hover:text-ocean">
+          Produk
+        </a>
+
+        <a href="#kontak"
+           class="font-medium text-slate-600 transition hover:text-ocean">
+          Kontak
+        </a>
+      </div>
+
+      <!-- Login -->
+      <a href="#login"
+         class="rounded-lg bg-navy px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-ocean">
+        Login
+      </a>
+    </nav>
+  </header>
+
+
+  <!-- ================= HERO SECTION ================= -->
+  <main id="home">
+
+    <section class="relative overflow-hidden bg-gradient-to-br from-white via-white to-skyblue">
+      <!-- Decorative circles -->
+      <div class="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-blue-100 opacity-60"></div>
+      <div class="absolute -bottom-32 -left-20 h-80 w-80 rounded-full bg-blue-50"></div>
+
+      <div class="relative mx-auto grid max-w-7xl items-center gap-12 px-6 py-24 lg:grid-cols-2 lg:px-8 lg:py-32">
+
+        <!-- Hero Text -->
+        <div>
+          <div class="mb-6 inline-flex items-center rounded-full border border-blue-200 bg-white px-4 py-2 text-sm font-medium text-ocean shadow-sm">
+            ☕ Kopi Nusantara Pilihan
+          </div>
+
+          <h1 class="max-w-3xl text-5xl font-extrabold leading-tight tracking-tight text-navy md:text-6xl lg:text-7xl">
+            Rasakan
+            <span class="text-ocean">Kehangatan</span>
+            di Setiap Tegukan.
+          </h1>
+
+          <p class="mt-6 max-w-xl text-lg leading-8 text-slate-600">
+            Kopi Samudra menghadirkan biji kopi pilihan Nusantara yang
+            dipanggang dengan penuh perhatian untuk menciptakan rasa
+            autentik, aroma kaya, dan pengalaman kopi yang tak terlupakan.
+          </p>
+
+          <!-- CTA -->
+          <div class="mt-9 flex flex-col gap-4 sm:flex-row">
+
+            <a href="#produk"
+               class="rounded-lg bg-navy px-7 py-3.5 text-center font-semibold text-white shadow-lg shadow-blue-900/20 transition hover:-translate-y-0.5 hover:bg-ocean">
+              Jelajahi Kopi
+            </a>
+
+            <a href="#tentang"
+               class="rounded-lg border-2 border-navy px-7 py-3.5 text-center font-semibold text-navy transition hover:bg-navy hover:text-white">
+              Kenali Kami
+            </a>
+
+          </div>
+
+          <!-- Small Info -->
+          <div class="mt-10 flex flex-wrap gap-8 border-t border-blue-100 pt-7">
+            <div>
+              <p class="text-2xl font-bold text-navy">100%</p>
+              <p class="text-sm text-slate-500">Biji Kopi Pilihan</p>
+            </div>
+
+            <div>
+              <p class="text-2xl font-bold text-navy">Nusantara</p>
+              <p class="text-sm text-slate-500">Dari Petani Lokal</p>
+            </div>
+
+            <div>
+              <p class="text-2xl font-bold text-navy">Fresh</p>
+              <p class="text-sm text-slate-500">Roasted Coffee</p>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Hero Visual -->
+        <div class="relative flex justify-center lg:justify-end">
+
+          <div class="relative h-[430px] w-full max-w-md">
+
+            <!-- Background Card -->
+            <div class="absolute inset-0 rotate-3 rounded-3xl bg-navy"></div>
+
+            <!-- Product Card -->
+            <div class="absolute inset-0 flex flex-col items-center justify-center overflow-hidden rounded-3xl bg-gradient-to-br from-blue-50 to-white shadow-2xl">
+
+              <!-- Coffee Illustration -->
+              <div class="flex h-56 w-56 items-center justify-center rounded-full bg-blue-100">
+                <div class="relative flex h-40 w-40 items-center justify-center rounded-full bg-white shadow-xl">
+                  <div class="text-7xl">☕</div>
+                </div>
+              </div>
+
+              <div class="mt-8 text-center">
+                <p class="text-sm font-semibold uppercase tracking-[0.3em] text-ocean">
+                  Kopi Samudra
+                </p>
+
+                <h2 class="mt-2 text-3xl font-bold text-navy">
+                  Signature Blend
+                </h2>
+
+                <p class="mt-2 text-sm text-slate-500">
+                  Rich · Smooth · Authentic
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================= SIMPLE PRODUCT INTRO ================= -->
+    <section id="tentang" class="bg-white py-20">
+      <div class="mx-auto max-w-4xl px-6 text-center">
+
+        <p class="text-sm font-bold uppercase tracking-[0.25em] text-ocean">
+          Tentang Kopi Samudra
+        </p>
+
+        <h2 class="mt-3 text-3xl font-bold text-navy md:text-4xl">
+          Dari Nusantara untuk Penikmat Kopi
+        </h2>
+
+        <p class="mx-auto mt-5 max-w-2xl leading-8 text-slate-600">
+          Kami percaya bahwa secangkir kopi yang baik dimulai dari biji
+          berkualitas. Kopi Samudra bekerja sama dengan petani lokal untuk
+          menghadirkan karakter unik kopi Indonesia ke dalam setiap kemasan.
+        </p>
+
+      </div>
+    </section>
+
+
+    <!-- ================= CTA ================= -->
+    <section id="produk" class="bg-navy py-16">
+      <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-8 px-6 text-center md:flex-row md:text-left">
+
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-[0.25em] text-blue-200">
+            Temukan Kopimu
+          </p>
+
+          <h2 class="mt-2 text-3xl font-bold text-white">
+            Siap menikmati rasa Nusantara?
+          </h2>
+        </div>
+
+        <a href="#kontak"
+           class="rounded-lg bg-white px-7 py-3.5 font-semibold text-navy transition hover:bg-blue-50">
+          Pesan Sekarang →
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ================= FOOTER ================= -->
+  <footer id="kontak" class="border-t border-blue-100 bg-white">
+    <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 py-8 md:flex-row lg:px-8">
+
+      <div>
+        <p class="font-bold tracking-wide text-navy">
+          KOPI SAMUDRA
+        </p>
+
+        <p class="mt-1 text-sm text-slate-500">
+          Kopi pilihan, rasa yang tak terlupakan.
+        </p>
+      </div>
+
+      <div class="text-center text-sm text-slate-500 md:text-right">
+        <p>© 2026 Kopi Samudra. All rights reserved.</p>
+        <p class="mt-1">
+          Dibuat dengan ☕ dan semangat Nusantara.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
